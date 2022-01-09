@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand/Quicksand-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+.max-screen {
+  @apply w-screen h-screen;
+}
+
+.top-8vh {
+  top: 8vh;
+}
+
+.full-screen {
+  @apply w-full h-screen;
+}
+
+.vertical-container {
+  @apply flex flex-col;
+}
+
+.full-content {
+  @apply w-full h-full;
+}
+
+.basic-padding {
+  @apply px-44;
+}
+
+.title-font {
+  font-family: Quicksand, sans-serif;
+  @apply text-xl;
+}
+
+.h-1\/10 {
+  height: 8vh;
+}
+
+.h-9\/10 {
+  height: calc(100% - 8vh);
+}
+
+.nav-top {
+  top: 8vh;
+}
+
+.main-color1 {
+  background-color: #82ccdd;
+}
+
+.main-color2 {
+  background-color: #60a3bc;
+}
+
+.main-color3 {
+  background-color: #3c6382;
+}
+
+.text-color1 {
+  color: #111111;
+}
+
+.header {
+  @apply w-full h-1/10 grid grid-cols-8 px-24 items-center fixed top-0 left-0 right-0 z-50 bg-white border-b text-xl border-gray-200;
+}
+
+.logo-container {
+  @apply col-span-1;
+}
+
+.navbar-container {
+  @apply col-span-6 h-full items-center text-center;
+}
+
+.profile-container {
+  @apply col-span-1 text-right;
+}
+
+.dropdown-navbar-container {
+  @apply w-full h-40 bg-white left-0 right-0 z-40 border-t grid-cols-8 justify-between px-24 fixed;
+}
+
+.main-background {
+  background-image: url("/images/wallpapers/wallpaper_4.jpg");
+  /* transform: scale(1);
+  margin: -1px;
+  padding: 1px; */
+  @apply w-full h-full bg-center bg-no-repeat bg-cover;
+}
+
+.left-1\/7 {
+  left: 14%;
+}
+
+.nav-items-grid {
+  @apply grid grid-cols-4;
+}
+
+.navbar {
+  @apply h-full items-center justify-around hover:cursor-pointer;
+}
+
+.intro-container {
+  @apply w-1/4 h-1/3 text-white absolute top-1/3 left-1/7;
+}
+
+.intro-title {
+  @apply text-3xl font-black text-center mb-6 text-gray-700;
+}
+
+.intro-content {
+  @apply text-lg font-medium;
+}
+
+.transport-container {
+  @apply grid grid-cols-2 h-1/2 w-full;
+}
+
+.transport-bus {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/transports/bus.jpg");
+  @apply bg-cover;
+}
+
+.transport-subway {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/transports/subway-enterence.jpg");
+  @apply bg-cover;
+}
+
+.login-background {
+  background-image: url("/images/wallpapers/wallpaper_1.jpg");
+  /* transform: scale(1);
+  margin: -1px;
+  padding: 1px; */
+  @apply w-full h-full bg-center bg-no-repeat bg-cover;
+}
+
+.login-container {
+  height: calc(100vh);
+  /* font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji"; */
+  @apply w-full absolute;
+}
+
+.login-box {
+  transform: translate(-50%, -50%);
+  @apply absolute z-20 top-1/2 left-1/2 w-1/4 h-1/2 bg-white rounded shadow-sm opacity-90;
+}
+
+.login-title {
+  @apply w-full h-1/3 justify-center flex items-center text-3xl font-bold;
+}
+
+.login-button {
+  @apply inline-flex justify-center px-5 py-1.5 text-sm font-medium border border-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+}
+
+.profile-box {
+  transform: translate(-50%, -50%);
+  @apply absolute z-20 top-1/2 left-1/2 w-1/3 h-3/4 bg-white rounded shadow-sm opacity-90;
+}
+
+.form-button {
+  @apply inline-flex justify-center px-5 py-1.5 text-sm font-medium border border-transparent rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+}
+
+.input-underline {
+  @apply mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black;
+}
+
+.timeline {
+  @apply flex items-center justify-center;
+}
